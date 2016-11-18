@@ -106,7 +106,7 @@ class Widget_Blog_Post extends Widget_Base {
 
 		<?php if (have_posts()) : while (have_posts()) : the_post (); ?>
 			<?php if ($layout_style == "Style 1" || ($show_featured == "True" && $query->current_post == 0 && !is_paged())) { ?>
-				<div <?php post_class('blog-post'); ?> id="post-<?php the_ID(); ?>">
+				<div <?php post_class('blog-post clearfix'); ?> id="post-<?php the_ID(); ?>">
 					<header class="blog-post__header">
 						<?php if ($show_category == "True" && $show_image == "True") : ?><?php if(!has_category('Uncategorized') && has_category()) : ?><span class="blog-post__category"><?php the_category(', '); ?></span><?php endif; endif; ?>
 						<?php if ($show_image == "True") : the_post_thumbnail( 'full-width', array('class' => 'blog-post__large-image') ); endif; ?>
@@ -118,7 +118,7 @@ class Widget_Blog_Post extends Widget_Base {
 			<?php } ?>
 
 			<?php if (($layout_style == "Style 2" && $show_featured == "True" && $query->current_post !== 0 && !is_paged()) || ( $layout_style == "Style 2" && $show_featured == "False" && !is_paged()) ) { ?>
-				<div <?php post_class('blog-post blog-post__style-2'); ?> id="post-<?php the_ID(); ?>">
+				<div <?php post_class('blog-post blog-post__style-2 clearfix'); ?> id="post-<?php the_ID(); ?>">
 					<div class="row">
 						<header class="blog-post__header col-sm-5">
 							<?php if ($show_category == "True" && $show_image == "True") : ?><?php if(!has_category('Uncategorized') && has_category()) : ?><span class="blog-post__category"><?php the_category(', '); ?></span><?php endif; endif; ?>
@@ -134,7 +134,7 @@ class Widget_Blog_Post extends Widget_Base {
 			<?php } ?>
 
 			<?php if (($layout_style == "Style 3" && $show_featured == "True" && $query->current_post !== 0 && !is_paged()) || ( $layout_style == "Style 3" && $show_featured == "False" && !is_paged()) ) { ?>
-				<div <?php post_class('blog-post blog-post__style-3'); ?> id="post-<?php the_ID(); ?>">
+				<div <?php post_class('blog-post blog-post__style-3 clearfix'); ?> id="post-<?php the_ID(); ?>">
 					<h2 class="blog-post__title elementor-heading-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<small class="blog-post__meta"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'assets/images/comments.png';?>" class="comment-count" /><?php comments_number('0', '1', '%'); ?> <span class="separator">|</span> Written By: <?php the_author(); ?></small>
 					<div class="row">
