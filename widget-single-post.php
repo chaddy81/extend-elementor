@@ -99,13 +99,11 @@ class Widget_Single_Post extends Widget_Base {
             ?>
           </main><!-- #main -->
         </div><!-- #primary -->
-      <?php 
-        endforeach;
-        wp_reset_postdata(); 
-      ?>
+      <?php endforeach; ?>
     <?php else : ?>
       <h4>No Post Selected </h4>
     <?php endif; ?>
+    <?php wp_reset_postdata(); ?>
     <?php }
 
 
