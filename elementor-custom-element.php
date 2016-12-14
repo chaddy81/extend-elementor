@@ -29,7 +29,7 @@ class ExtendElementor {
 			$widget_simple_card = 'plugins/elementor/widget-simple-card.php';
 			$widget_basic_card = 'plugins/elementor/widget-basic-card.php';
 			$widget_icon_card = 'plugins/elementor/widget-icon-card.php';
-			$widget_blog_post = 'plugins/elementor/widget-blog-post.php';
+			// $widget_blog_post = 'plugins/elementor/widget-blog-post.php';
 			$widget_email_form = 'plugins/elementor/widget-email-form.php';
 			$widget_single_post = 'plugins/elementor/widget-single-post.php';
 
