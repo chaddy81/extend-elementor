@@ -89,7 +89,6 @@ class Widget_Email_Form extends Widget_Base {
 			[
 				'label' => __( 'Form Image', 'extend-elementor' ),
 				'type' => Controls_Manager::MEDIA,
-				'default' => '',
 				'section' => 'section_content_tab',
 				'condition' => [
 					'form_style' => 'Style 1'

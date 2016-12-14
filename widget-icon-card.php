@@ -60,7 +60,6 @@ class Widget_Icon_Card extends Widget_Base {
 			[
 				'label' => __( 'Icon Image', 'extend-elementor' ),
 				'type' => Controls_Manager::MEDIA,
-				'default' => '',
 				'section' => 'section_content_tab'
 			]
 		);
@@ -70,7 +69,6 @@ class Widget_Icon_Card extends Widget_Base {
 			[
 				'label' => __( 'Background Image', 'extend-elementor' ),
 				'type' => Controls_Manager::MEDIA,
-				'default' => '',
 				'section' => 'section_content_tab'
 			]
 		);
@@ -80,7 +78,6 @@ class Widget_Icon_Card extends Widget_Base {
 			[
 				'label' => __( 'Links To', 'extend-elementor' ),
 				'type' => Controls_Manager::URL,
-				'default' => '',
 				'section' => 'section_content_tab'
 			]
 		);

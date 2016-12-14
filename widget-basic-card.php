@@ -95,7 +95,6 @@ class Widget_Basic_Card extends Widget_Base {
 			[
 				'label' => __( 'Links To', 'extend-elementor' ),
 				'type' => Controls_Manager::URL,
-				'default' => '',
 				'section' => 'section_content_tab'
 			]
 		);
