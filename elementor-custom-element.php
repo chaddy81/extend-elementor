@@ -3,7 +3,7 @@
  * Plugin Name: Extend Elementor
  * Description: Custom elements added to Elementor
  * Plugin URI:
- * Version: 0.0.10
+ * Version: 0.2.0
  * Author: Chad Bartels
  * Author URI: http://www.bluebeandev.com
  * Text Domain: extend-elementor
