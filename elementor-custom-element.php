@@ -49,13 +49,13 @@ class ExtendElementor {
 				require_once $template_file_2;
 			}
 
-			$template_file_3 = locate_template($widget_blog_post);
-			if ( !$template_file_3 || !is_readable( $template_file_3 ) ) {
-				$template_file_3 = plugin_dir_path(__FILE__).'widget-blog-post.php';
-			}
-			if ( $template_file_3 && is_readable( $template_file_3 ) ) {
-				require_once $template_file_3;
-			}
+			// $template_file_3 = locate_template($widget_blog_post);
+			// if ( !$template_file_3 || !is_readable( $template_file_3 ) ) {
+			// 	$template_file_3 = plugin_dir_path(__FILE__).'widget-blog-post.php';
+			// }
+			// if ( $template_file_3 && is_readable( $template_file_3 ) ) {
+			// 	require_once $template_file_3;
+			// }
 
 			$template_file_4 = locate_template($widget_email_form);
 			if ( !$template_file_4 || !is_readable( $template_file_4 ) ) {
