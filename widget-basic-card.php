@@ -85,7 +85,6 @@ class Widget_Basic_Card extends Widget_Base {
 			[
 				'label' => __( 'Background Image', 'extend-elementor' ),
 				'type' => Controls_Manager::MEDIA,
-				'default' => '',
 				'section' => 'section_content_tab'
 			]
 		);

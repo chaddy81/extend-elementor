@@ -29,7 +29,6 @@ class ExtendElementor {
 			$widget_simple_card = 'plugins/elementor/widget-simple-card.php';
 			$widget_basic_card = 'plugins/elementor/widget-basic-card.php';
 			$widget_icon_card = 'plugins/elementor/widget-icon-card.php';
-			// $widget_blog_post = 'plugins/elementor/widget-blog-post.php';
 			$widget_email_form = 'plugins/elementor/widget-email-form.php';
 			$widget_single_post = 'plugins/elementor/widget-single-post.php';
 
@@ -48,14 +47,6 @@ class ExtendElementor {
 			if ( $template_file_2 && is_readable( $template_file_2 ) ) {
 				require_once $template_file_2;
 			}
-
-			// $template_file_3 = locate_template($widget_blog_post);
-			// if ( !$template_file_3 || !is_readable( $template_file_3 ) ) {
-			// 	$template_file_3 = plugin_dir_path(__FILE__).'widget-blog-post.php';
-			// }
-			// if ( $template_file_3 && is_readable( $template_file_3 ) ) {
-			// 	require_once $template_file_3;
-			// }
 
 			$template_file_4 = locate_template($widget_email_form);
 			if ( !$template_file_4 || !is_readable( $template_file_4 ) ) {
