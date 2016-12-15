@@ -19,7 +19,7 @@ class Widget_Simple_Card extends Widget_Base {
 
 	public function get_icon() {
 		// Icon name from the Elementor font file, as per http://dtbaker.net/web-development/creating-your-own-custom-elementor-widgets/
-		return 'post-list';
+		return 'eicon-post-list';
 	}
 
 	protected function _register_controls() {

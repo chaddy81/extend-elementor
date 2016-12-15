@@ -19,7 +19,7 @@ class Widget_Basic_Card extends Widget_Base {
 
 	public function get_icon() {
 		// Icon name from the Elementor font file, as per http://dtbaker.net/web-development/creating-your-own-custom-elementor-widgets/
-		return 'posts-group';
+		return 'eicon-posts-group';
 	}
 
 	protected function _register_controls() {
