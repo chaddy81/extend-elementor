@@ -47,30 +47,6 @@ class ExtendElementor {
 			if ( $template_file_2 && is_readable( $template_file_2 ) ) {
 				require_once $template_file_2;
 			}
-
-			$template_file_4 = locate_template($widget_email_form);
-			if ( !$template_file_4 || !is_readable( $template_file_4 ) ) {
-				$template_file_4 = plugin_dir_path(__FILE__).'widget-email-form.php';
-			}
-			if ( $template_file_4 && is_readable( $template_file_4 ) ) {
-				require_once $template_file_4;
-			}
-
-			$template_file_5 = locate_template($widget_icon_card);
-			if ( !$template_file_5 || !is_readable( $template_file_5 ) ) {
-				$template_file_5 = plugin_dir_path(__FILE__).'widget-icon-card.php';
-			}
-			if ( $template_file_5 && is_readable( $template_file_5 ) ) {
-				require_once $template_file_5;
-			}
-
-			$template_file_6 = locate_template($widget_single_post);
-			if ( !$template_file_6 || !is_readable( $template_file_6 ) ) {
-				$template_file_6 = plugin_dir_path(__FILE__).'widget-single-post.php';
-			}
-			if ( $template_file_6 && is_readable( $template_file_6 ) ) {
-				require_once $template_file_6;
-			}
 		}
 	}
 }
